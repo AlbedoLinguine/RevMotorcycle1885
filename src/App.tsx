@@ -63,9 +63,7 @@ function App() {
     
     // Try to play idle sound (may not work until user interaction)
     const playIdle = () => {
-      idle.play().catch(err => {
-        console.log("Waiting for user interaction to play audio");
-      });
+      idle.play();
     };
     
     playIdle();
